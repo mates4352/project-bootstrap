@@ -521,4 +521,71 @@ sup {
 
 }
 
+/* -------plan------- */
+
+.plan {
+	height: 100vh;
+	min-height: 100vh;
+}
+
+.plan--bg {
+	background: url('../assets/images/plan/bg.png')right 25vh  no-repeat;
+}
+
+.plan__container{
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+.plan__inner {
+	max-width: 490px;
+}
+.plan__text {
+	font: 10px/12px "Roboto_Medium";
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: #3D4F9F;
+}
+.button {
+	width: 130px;
+	height: 45px;
+
+	font:13px/16px "Quicksand_Bold";
+	color: #FFFFFF;
+
+	background: #4C85FF;
+	box-shadow: 0px 5px 15px rgba(188, 199, 255, 0.75);
+	border-radius: 2px;
+}
+.button__white{
+	font-family: "Quicksand__Medium";
+	color: #ADB4D2;
+
+	background: #F5F8FF;
+}
+
+@media (max-width: 1140px){
+	.plan--bg {
+		background: url('../assets/images/plan/bg.png')right 5vh  no-repeat;
+	}
+	.plan__container{
+		align-items: flex-end;
+		padding: 0 0 100px 0;
+	}
+	
+}
+
+@media (max-width: 576px){
+	.plan--bg {
+		background: rgb(241, 207, 156);
+	}
+	.plan__container{
+		align-items: center;
+		padding: 0 15px 0 15px;
+	}
+	.plan__inner {
+		max-width: none;
+	}
+}
+
 /* -------footer------- */
