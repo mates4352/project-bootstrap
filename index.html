@@ -11,7 +11,7 @@
 	<title>Document</title>
 </head>
 
-<body>
+<body class="body">
 
 	<!---- header ---->
 	<!---- svg ---->
@@ -169,7 +169,15 @@
 			</g>
 		</symbol>
 	</svg>
-	
+
+	<svg display="none">
+		<symbol id="blog__icon" viewBox="0 0 8 8">
+			<g fill="none">
+				<path d="M1.13037 1.96655L6.0886 6.91886" stroke="#A7AAC6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+			</g>
+		</symbol>
+	</svg>
+		
 
 	<!---- svg ---->
 	<header class="header">
@@ -185,7 +193,7 @@
 				</button>
 
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav mr-auto">
+					<ul class="navbar-nav d-flex align-items-center mr-auto">
 						<li class="header__menu-item nav-item active">
 							<a class="header__menu-link nav-link" href="#">Home <span class="sr-only">(current)</span></a>
 						</li>
@@ -204,7 +212,7 @@
 						</li>
 					</ul>
 
-					<div class="header__socials d-flex">
+					<div class="header__socials d-flex justify-content-center">
 						<li class="header__socials-items nav-item active">
 							<a class="header__socials-link nav-link" href="#">
 
@@ -244,8 +252,8 @@
 
 								<span class="sr-only">(current)</span></a>
 						</li>
-
 						<button class="header__button btn btn-outline-success my-2 my-sm-0" type="submit">Get started</button>
+
 					</div>
 			</nav>
 
@@ -255,66 +263,134 @@
 
 	<!---- play ---->
 
-	<section class="play play--bg">
-		<div class="play__inner">
-			<h4 class="title__sub">PLAN YOUR LIFE</h4>
-			<h1 class="title">Increase your <span>productivity</span></h1>
-			<div class="play__text-inner">
-				<p class="text ">
-					Brute laoreet efficiendi id his, ea illum
-					nonumes luptatum pro. Usu atqui laudem an,
-					insolens gubergren similique est cu. Et vel
-					modus congue vituperata.
-				</p>
-			</div>
+	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+		<ol class="carousel-indicators">
+		  <li class="play__indicators" data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+		  <li class="play__indicators" data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+		</ol>
+		<div class="carousel-inner">
+		  <div class="carousel-item active">
 
-			<div class="play__button">
-				<svg class="play__svg" class="header__socials-icon">
-					<use xlink:href="#play"></use>
-				</svg>
-			</div>
-
-			<div class="moda">
-				<video class="modal__video" controls src="assets/videoplayback.mp4" ></video>
-			</div>
-
+			<section class="play play--bg">
+				<div class="play__inner">
+					<h4 class="title__sub">PLAN YOUR LIFE</h4>
+					<h1 class="play__title">Increase your <span>productivity</span></h1>
+					<div class="play__text-inner">
+						<p class="text ">
+							Brute laoreet efficiendi id his, ea illum
+							nonumes luptatum pro. Usu atqui laudem an,
+							insolens gubergren similique est cu. Et vel
+							modus congue vituperata.
+						</p>
+					</div>
 		
+					<div class="play__button">
+						<svg class="play__svg" class="header__socials-icon">
+							<use xlink:href="#play"></use>
+						</svg>
+					</div>
 		
-			
-			<div class="play__block">
-				<svg class="play__bg" viewBox="0 0 1440 349" fill="none" >
-					<path d="M0 306.51C202.703 306.51 347.472 271.633 480.333 273.758C789.74 278.705 643.639 131.682 960.667 131.682C1305.86 131.682 1223.24 2 1441 2" stroke="#5F82FF" stroke-width="3"/>
-					<path d="M480.333 273.758C347.472 271.633 202.703 306.51 0 306.51V349H1441V2C1223.24 2 1305.86 131.682 960.667 131.682C643.639 131.682 789.74 278.705 480.333 273.758Z" fill="url(#paint0_linear)" fill-opacity="0.4"/>
-					<defs>
-					<linearGradient id="paint0_linear" x1="278.466" y1="349.443" x2="278.466" y2="-105.995" gradientUnits="userSpaceOnUse">
-					<stop stop-color="#4B71FF" stop-opacity="0"/>
-					<stop offset="1" stop-color="#6B89F8"/>
-					</linearGradient>
-					</defs>
-				</svg>
+					<div class="play__block">
+						<svg class="play__bg" viewBox="0 0 1440 349" fill="none" >
+							<path d="M0 306.51C202.703 306.51 347.472 271.633 480.333 273.758C789.74 278.705 643.639 131.682 960.667 131.682C1305.86 131.682 1223.24 2 1441 2" stroke="#5F82FF" stroke-width="3"/>
+							<path d="M480.333 273.758C347.472 271.633 202.703 306.51 0 306.51V349H1441V2C1223.24 2 1305.86 131.682 960.667 131.682C643.639 131.682 789.74 278.705 480.333 273.758Z" fill="url(#paint0_linear)" fill-opacity="0.4"/>
+							<defs>
+							<linearGradient id="paint0_linear" x1="278.466" y1="349.443" x2="278.466" y2="-105.995" gradientUnits="userSpaceOnUse">
+							<stop stop-color="#4B71FF" stop-opacity="0"/>
+							<stop offset="1" stop-color="#6B89F8"/>
+							</linearGradient>
+							</defs>
+						</svg>
+		
+						<svg class="play__circle play__circle--one">
+							<use xlink:href="#oval"></use>
+						</svg>
+		
+						<svg class="play__circle play__circle--two">
+							<use xlink:href="#oval"></use>
+						</svg>
+		
+						<svg class="play__circle play__circle--three">
+							<use xlink:href="#oval"></use>
+						</svg>
+		
+						<svg class="play__circle play__circle--four">
+							<use xlink:href="#oval"></use>
+						</svg>
+		
+						<img class="play__img" src="assets/images/play/Group 80.png" alt="" >
+		
+					</div>
+					
+				</div>
+			</section>
+		  </div>
+		  <div class="carousel-item">
 
-				<svg class="play__circle play__circle--one">
-					<use xlink:href="#oval"></use>
-				</svg>
-
-				<svg class="play__circle play__circle--two">
-					<use xlink:href="#oval"></use>
-				</svg>
-
-				<svg class="play__circle play__circle--three">
-					<use xlink:href="#oval"></use>
-				</svg>
-
-				<svg class="play__circle play__circle--four">
-					<use xlink:href="#oval"></use>
-				</svg>
-
-				<img class="play__img" src="assets/images/play/Group 80.png" alt="" >
-
-			</div>
-			
-	</div>    <!---- heasder ---->
-	</section>   <!---- heasder ---->
+			<section class="play play--bg">
+				<div class="play__inner">
+					<h4 class="title__sub">PLAN YOUR LIFE</h4>
+					<h1 class="play__title">Increase your <span>productivity</span></h1>
+					<div class="play__text-inner">
+						<p class="text ">
+							Brute laoreet efficiendi id his, ea illum
+							nonumes luptatum pro. Usu atqui laudem an,
+							insolens gubergren similique est cu. Et vel
+							modus congue vituperata.
+						</p>
+					</div>
+		
+					<div class="play__button">
+						<svg class="play__svg" class="header__socials-icon">
+							<use xlink:href="#play"></use>
+						</svg>
+					</div>
+		
+					<div class="play__block">
+						<svg class="play__bg" viewBox="0 0 1440 349" fill="none" >
+							<path d="M0 306.51C202.703 306.51 347.472 271.633 480.333 273.758C789.74 278.705 643.639 131.682 960.667 131.682C1305.86 131.682 1223.24 2 1441 2" stroke="#5F82FF" stroke-width="3"/>
+							<path d="M480.333 273.758C347.472 271.633 202.703 306.51 0 306.51V349H1441V2C1223.24 2 1305.86 131.682 960.667 131.682C643.639 131.682 789.74 278.705 480.333 273.758Z" fill="url(#paint0_linear)" fill-opacity="0.4"/>
+							<defs>
+							<linearGradient id="paint0_linear" x1="278.466" y1="349.443" x2="278.466" y2="-105.995" gradientUnits="userSpaceOnUse">
+							<stop stop-color="#4B71FF" stop-opacity="0"/>
+							<stop offset="1" stop-color="#6B89F8"/>
+							</linearGradient>
+							</defs>
+						</svg>
+		
+						<svg class="play__circle play__circle--one">
+							<use xlink:href="#oval"></use>
+						</svg>
+		
+						<svg class="play__circle play__circle--two">
+							<use xlink:href="#oval"></use>
+						</svg>
+		
+						<svg class="play__circle play__circle--three">
+							<use xlink:href="#oval"></use>
+						</svg>
+		
+						<svg class="play__circle play__circle--four">
+							<use xlink:href="#oval"></use>
+						</svg>
+		
+						<img class="play__img" src="assets/images/play/Group 80.png" alt="" >
+		
+					</div>
+					
+				</div>
+			</section>
+		  </div>
+		</div>
+		<a class="play__arrow-prev carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+		</a>
+		<a class="play__arrow-next carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+		</a>
+	 </div>
+	 <div class="moda">
+		<video class="modal__video" controls src="assets/videoplayback.mp4" ></video>
+	</div>
+	
 
 	<!---- brands ---->
 
@@ -414,11 +490,11 @@
 		<div class="container d-flex flex-column justify-content-center align-items-center h-100 ">
 
 			<h4 class="title__sub text-center">ABOUT US</h4>
-			<h2 class="title">Read about our app</h2>
+			<h2 class="title title--fz title--line-h">Read about our app</h2>
 
 			<div class="about__row row justify-content-between ">
 
-				<div class="about__col col-2 text-center">
+				<div class="about__col  col-12 col-md-6 col-xl-2 text-center">
 					<svg class="about__icon ">
 						<use xlink:href="#about_icon1"></use>
 					</svg>
@@ -427,7 +503,7 @@
 
 				</div>
 
-				<div class="about__col col-2  text-center">
+				<div class="about__col col-12 col-md-6 col-xl-2  text-center">
 					<svg class="about__icon ">
 						<use xlink:href="#about_icon2"></use>
 					</svg>
@@ -436,7 +512,7 @@
 
 				</div>
 
-				<div class="about__col col-2  text-center">
+				<div class="about__col col-12 col-md-6 col-xl-2  text-center">
 					<svg class="about__icon ">
 						<use xlink:href="#about_icon3"></use>
 					</svg>
@@ -445,7 +521,7 @@
 
 				</div>
 
-				<div class="about__col col-2 text-center">
+				<div class="about__col col-12 col-md-6 col-xl-2 text-center">
 					<svg class="about__icon ">
 						<use xlink:href="#about_icon4"></use>
 					</svg>
@@ -457,11 +533,11 @@
 				
 			</div> <!---- about__row ---->
 
-			<div class="about__button-row row row-cols-xl-3 align-items-center ">
+			<div class="about__button-row row flex-column flex-sm-row-reverse justify-content-center align-items-center ">
 
-				<button class="about__bth btn btn-primary">Read more</button>
+				<button class="button-tho ">Read more</button>
 				<p class="about__text about__text-line">OR</p>
-				<button class="about__bth about__bth-right btn btn-primary">Get started</button>
+				<button class="button-tho button-tho--color ">Get started</button>
 
 			</div>
 
@@ -472,9 +548,138 @@
 
 	<!---- blog ---->
 
+	<section class="blog">
+		<h4 class="title__sub text-center">OUR RESOURCES</h4>
+		<h2 class="title title--fz title--line-h text-center">Start reading our blog</h2>
+		<div class="blog__row row align-items-center justify-content-between">
+			<div class="blog__inner-img col-auto ">
+				<img class="blog__img-left" src="./assets/images/blog/img3.png" alt="" >
+				<img class="blog__img-right-top" src="./assets/images/blog/img2.png" alt="" >
+				<img class="blog__img-left-bottom" src="./assets/images/blog/img1.png" alt="" >
+			</div>
+			<div class="blog__description col-auto">
+				<h2 class="title">How to start planning</h2>
+				<p class="blog__text">Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti. Natum petentium principes mei ea. Tota everti periculis vis ei, quas tibique pro at, eos ut decore ...
+				</p>
+				<div class="blog__button">
+					<button class="button-tho button-tho--color blog__buttton--margin">Read now</button>
+					<button class="button-tho blog__buttton blog__buttton--margin">Add to your bookmarks</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
 	<!---- testimonials ---->
 
+	<section class="testimonials">
+		<div class="container">
+			<div class="testimonials__row row">
+				<div class="testimonials__description col ">
+
+					<h4 class="title__sub">TESTIMONIALS</h4>
+					<h2 class="title">Customers's quotes</h2>
+					<p class="text testimonials__text text-left">Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu atqui laudem an.</p>
+
+				</div>
+
+				<div class="testimonials__slider col justify-content-center">
+					<p class="text">Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.
+					</p>
+					<img class="testimonials__img" src="./assets/images/testimonials/img.png" alt="" >
+				</div>
+		</div>
+		</div>
+	</section>
+
 	<!---- accordion ---->
+
+		<div class="accordion__container container">
+
+			<h4 class="title__sub text-center">Customer help</h4>
+			<h2 class="title text-center">Frequently asked questions</h2>
+
+			<div class="accordion" id="accordionExample">
+				<div class="card">
+				<div class="card-header" id="headingOne">
+					<h5 class="mb-0">
+						<button class="accoradion__bth btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+							Reque insolens in vel?
+						</button>
+					</h5>
+				</div>
+			
+				<div id="collapseOne" class="accordion__block collapse show " aria-labelledby="headingOne" data-parent="#accordionExample">
+					<div class="accordion__text card-body">
+						Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.
+					</div>
+					<button class="accoradion__button">Go to documentation</button>
+				</div>
+				</div>
+				<div class="card">
+				<div class="card-header" id="headingTwo">
+					<h5 class="mb-0">
+						<button class="accoradion__bth btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+							Vis rebum error graecis ea, id sit postea accusamus?
+						</button>
+					</h5>
+				</div>
+				<div id="collapseTwo" class="accordion__block collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+					<div class="accordion__text card-body">
+						Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.
+					</div>
+					<button class="accoradion__button">Go to documentation</button>
+				</div>
+				</div>
+				<div class=" card">
+				<div class="card-header" id="headingThree">
+					<h5 class="mb-0">
+						<button class="accoradion__bth btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+							Lorem repudiandae ne nec?
+						</button>
+					</h5>
+				</div>
+				<div id="collapseThree" class="accordion__block collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+					<div class="accordion__text card-body">
+						Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.
+					</div>
+					<button class="accoradion__button">Go to documentation</button>
+				</div>
+				</div>
+				<div class="card">
+					<div class="card-header" id="headingOne">
+						<h5 class="mb-0">
+							<button class="accoradion__bth btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseOne">
+								Ad dicit numquam vel. Et eos iudico feugait percipitur?
+							</button>
+						</h5>
+					</div>
+				
+					<div id="collapseFour" class="accordion__block collapse show " aria-labelledby="headingOne" data-parent="#accordionExample">
+						<div class="accordion__text card-body">
+							Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.
+						</div>
+						<button class="accoradion__button">Go to documentation</button>
+					</div>
+					</div>
+					<div class="card">
+						<div class="card-header" id="headingOne">
+							<h5 class="mb-0">
+								<button class="accoradion__bth btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseOne">
+									Sea no dico percipitur. Fierent constituam definitiones id eum?
+								</button>
+							</h5>
+						</div>
+					
+						<div id="collapseFive" class="accordion__block collapse show " aria-labelledby="headingOne" data-parent="#accordionExample">
+							<div class="accordion__text card-body">
+								Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.
+							</div>
+							<button class="accoradion__button">Go to documentation</button>
+						</div>
+						</div>
+			</div>
+	</div>
+
 
 	<!---- started ---->
 
