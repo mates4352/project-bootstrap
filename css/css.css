@@ -588,4 +588,60 @@ sup {
 	}
 }
 
+
+.users__container {
+	width: 1440px;
+	height: 342px;
+}
+
+.col__customers {
+	background-color: #6888FF;
+	width: 720px;
+	height: 342px;
+
+}
+
+.col__users {
+	background-color: #E9EFFF;
+	width: 720px;
+	height: 342px;
+
+}
+
+.p__customers {
+	
+width: 220px;
+height: 45px;
+
+font-family: 'Quicksand';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 23px;
+letter-spacing: 0.03em;
+}
+
+.p__users {
+color: #5E80FF;
+
+width: 220px;
+height: 45px;
+
+font-family: 'Quicksand';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 23px;
+letter-spacing: 0.03em;
+}
+
+
+
+
+
 /* -------footer------- */
+
+
+
+
+div {border: 1px solid red}
