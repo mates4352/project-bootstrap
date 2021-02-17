@@ -632,123 +632,55 @@ sup {
 	}
 }
 
+/* -------users------- */
 
 .users__container {
-	width: 1440px;
-	height: 342px;
-
-	position: relative;
-
+	min-height: 342px;
 }
 
-.col__customers {
+.users__col-right{
+	padding: 66px 90px 66px 0;
 	background-color: #6888FF;
-	width: 720px;
-	height: 342px;
-
-	
 }
 
-.customers__img {
-	position: absolute;
-	right: 100px;
-	bottom: 210px;
-}
-
-
-.col__users {
+.users__col {
+	padding: 66px 0 66px 90px;
 	background-color: #E9EFFF;
-	width: 720px;
-	height: 342px;
-
 }
 
-.user__img {
-	position: absolute;
-	left: 110px;
-	bottom: 210px;
-}
+.users__text {
+	max-width: 260px;
 
-
-.p__customers {
-
-font-family: 'Quicksand__Medium';
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 23px;
-letter-spacing: 0.03em;
-text-align: right;
-
-
-margin-bottom: 66px;
-margin-left: 100px;
-margin-right: 90px;
-width: 260px;
-height: 45px;
-
-
-}
-
-.p__users {
-color: #5E80FF;
-
-font-family: 'Quicksand__Medium';
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 23px;
-letter-spacing: 0.03em;
-text-align: left;
-
-
-margin-bottom: 66px;
-margin-left: 90px;
-margin-right: 100px;
-width: 260px;
-height: 45px;
-}
-
-
-.title__customers {
-	margin-right: 90px;
-
-	font-family: 'Quicksand__Medium';
-	font-style: normal;
-	font-weight: normal;
-	font-size: 48px;
-	line-height: 83px;
-	text-align: right;
+	font:18px/23px "Quicksand__Medium";
 	letter-spacing: 0.03em;
-
 }
 
-.title__users {
-	margin-left: 90px;
+.users__text-left {
 	color: #5E80FF;
+}
 
-	font-family: 'Quicksand__Medium';
-	font-style: normal;
-	font-weight: normal;
-	font-size: 48px;
-	line-height: 83px;
-	text-align: left;
+.users__title{
+	margin: 20px 0;
+	
+	font:48px/85px "Quicksand__Medium";
+	color: #5E80FF;
 	letter-spacing: 0.03em;
-
 }
 
 
+@media (max-width: 768px){
+	.users__col-right{
+		padding: 66px 0 66px 0;
+		background-color: #6888FF;
+	}
+	
+	.users__col {
+		padding: 66px 0 66px 0;
+		background-color: #E9EFFF;
+	}
+}
 
-
-
-/* div {border: 1px solid red} */
-
-
-/* -------footer------- */
-
-
-
-
+/* -------users------- */
 
 /* -------about------- */
 .about{
