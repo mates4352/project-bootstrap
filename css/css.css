@@ -461,7 +461,7 @@ sup {
 .play__circle--four{
 	position:absolute;
 	top: 3%;
-   left: 90%;
+	left: 90%;
 }
 
 .play__img{
@@ -592,6 +592,9 @@ sup {
 .users__container {
 	width: 1440px;
 	height: 342px;
+
+	position: relative;
+
 }
 
 .col__customers {
@@ -599,7 +602,15 @@ sup {
 	width: 720px;
 	height: 342px;
 
+	
 }
+
+.customers__img {
+	position: absolute;
+	right: 100px;
+	bottom: 210px;
+}
+
 
 .col__users {
 	background-color: #E9EFFF;
@@ -608,35 +619,85 @@ sup {
 
 }
 
-.p__customers {
-	
-width: 220px;
-height: 45px;
+.user__img {
+	position: absolute;
+	left: 110px;
+	bottom: 210px;
+}
 
-font-family: 'Quicksand';
+
+.p__customers {
+
+font-family: 'Quicksand__Medium';
 font-style: normal;
 font-weight: 500;
 font-size: 18px;
 line-height: 23px;
 letter-spacing: 0.03em;
+text-align: right;
+
+
+margin-bottom: 66px;
+margin-left: 100px;
+margin-right: 90px;
+width: 260px;
+height: 45px;
+
+
 }
 
 .p__users {
 color: #5E80FF;
 
-width: 220px;
-height: 45px;
-
-font-family: 'Quicksand';
+font-family: 'Quicksand__Medium';
 font-style: normal;
 font-weight: 500;
 font-size: 18px;
 line-height: 23px;
 letter-spacing: 0.03em;
+text-align: left;
+
+
+margin-bottom: 66px;
+margin-left: 90px;
+margin-right: 100px;
+width: 260px;
+height: 45px;
+}
+
+
+.title__customers {
+	margin-right: 90px;
+
+	font-family: 'Quicksand__Medium';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 48px;
+	line-height: 83px;
+	text-align: right;
+	letter-spacing: 0.03em;
+
+}
+
+.title__users {
+	margin-left: 90px;
+	color: #5E80FF;
+
+	font-family: 'Quicksand__Medium';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 48px;
+	line-height: 83px;
+	text-align: left;
+	letter-spacing: 0.03em;
+
 }
 
 
 
+
+
+/* div {border: 1px solid red} */
 
 
 /* -------footer------- */
@@ -644,7 +705,7 @@ letter-spacing: 0.03em;
 
 
 
-div {border: 1px solid red}
+
 /* -------about------- */
 .about{
 	height: 100vh;
