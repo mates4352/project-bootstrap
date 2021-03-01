@@ -233,8 +233,7 @@ sup {
 	border-radius: 5px;
 }
 
-
-.header__menu-link{
+.menu__link{
 	margin-right:30px;
 
 	font: 12px/15px "Quicksand__Medium";
@@ -242,23 +241,23 @@ sup {
 	color: #697CA6 !important;
 
 	text-shadow: 0px 0px 5px #E6E6E6;
-
 	transition: color 500ms ease;
 }
 
-.header__menu-link:hover{
+
+.menu__link:hover{
 	color: #5E81FE !important;
 }
 
-.header__socials-items{
+.menu__link{
 	margin-right: 25px;
 }
 
-.header__socials-items:last-child{
+.menu__link:last-child{
 	margin-right: 45px;
 }
 
-.header__socials-icon{
+.socials-icon{
 	width: 9px;
 	height: 17px;
 
@@ -267,52 +266,57 @@ sup {
 	transition: fill 500ms ease;
 }
 
-.header__socials-items:nth-child(2) .header__socials-link .header__socials-icon{
+.socials-items:nth-child(2) .socials-link .socials-icon{
 	width: 15px;
 	height: 12px;
 }
 
-.header__socials-items:nth-child(3) .header__socials-link .header__socials-icon{
+.socials-items:nth-child(3) .socials-link .socials-icon{
 	width: 17px;
 	height: 14px;
 }
 
-.header__socials-items:nth-child(4) .header__socials-link .header__socials-icon{
+.socials-items:nth-child(4) .socials-link .socials-icon{
 	width: 17px;
 	height: 13px;
 }
 
-.header__socials-icon:hover{
+.socials-icon:hover{
 	fill:#5E81FE;
 }
 
+@media(max-width:1140px){
+	.menu-link{
+		margin-right: 0px;
+	}
+	.menu__link:last-child{
+		margin-top: 25px;
+		margin-right: 0px;
+	}
+	.socials-items{
+		margin-right: 15px;
+	}
+}
 @media(max-width:992px){
-	.header__socials{
+	.socials{
 		flex-wrap: wrap;
 	}
-	.header__socials-items{
+	.socials-items{
 		margin-right: 5px;
 	}
 	.header__button{
+		text-align: center;
 	}
 
-	.header__menu-link{
+	.menu-link{
 		margin-top: 25px;
 	}
-	.header__socials{
+	.socials{
 		margin-top: 25px;
 	}
 }
 
-@media(max-width:1140px){
-	.header__menu-link{
-		margin-right: 15px;
-	}
 
-	.header__socials-items{
-		margin-right: 15px;
-	}
-}
 
 /* -------play------ */
 .play{
@@ -1130,9 +1134,6 @@ color: #FFFFFF !important;
 	padding: 120px 0;
 }
 
-.SignUp__description {
-
-}
 
 .SignUp__title {
 	font:18px/22px "OpenSans_Bold";
@@ -1178,5 +1179,8 @@ color: #FFFFFF !important;
 }
 
 /* -------footer------- */
-/* Read documentation */
 
+.footer__menu{
+	min-height: 80px;
+	background-color: #fff !important;
+}
