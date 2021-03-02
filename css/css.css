@@ -492,6 +492,19 @@ sup {
 	left: 36%;
 }
 
+.svg__circle:hover{
+	cursor: pointer;
+}
+
+.svg__circle::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 120px;
+	height: 120px;
+	border: 1px solid #000;
+}
 
 .play__indicators{
 	width: 13px !important;
